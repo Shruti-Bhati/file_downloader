@@ -24,7 +24,7 @@ def parallel_downloads(start,end,url):
 	arguments = list()
 	pointer = start
 
-	#Dynamically finding how many parallel processes need to be createds
+	#Dynamically finding how many parallel processes need to be created
 	processes = int(math.ceil((end-start)/process_chunk))
 	for i in range(processes):
 		s = pointer
